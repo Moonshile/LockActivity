@@ -1,16 +1,19 @@
 package com.moonshile.demo;
 
-import android.support.v7.app.ActionBarActivity;
+import com.moonshile.lib.ui.LockedActivity;
+
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends LockedActivity<MyLockerActivity> {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        super.key = "";
+        super.lockerClass = MyLockerActivity.class;
         setContentView(R.layout.activity_main);
     }
 
