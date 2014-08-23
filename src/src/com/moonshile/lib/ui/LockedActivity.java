@@ -16,6 +16,7 @@ import android.util.Log;
 
 /**
  * This activity will be locked if onResume() called
+ * T is the locker Activity
  */
 public abstract class LockedActivity<T> extends Activity {
 	
