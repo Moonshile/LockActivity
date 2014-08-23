@@ -39,7 +39,7 @@ into your project (NOT recommended), then *LockActivity* can be used as you wish
 	  
 	* You need to add an attribute in the manifest file to this *Locker Activity* as:
 
-		`android:theme="@android:style/Theme.Translucent.NoTitleBar"`
+		android:theme="@android:style/Theme.Translucent.NoTitleBar"
 
 2.	Create a *Main Activity*
 
@@ -51,25 +51,25 @@ into your project (NOT recommended), then *LockActivity* can be used as you wish
 	  application and the lockerClass you created with super class `LockerActivity` respectively. 
 	  For example:
 
-			`super.key = "";`
-			`super.lockerClass = MyLockerActivity.class;`
+			super.key = "";
+			super.lockerClass = MyLockerActivity.class;
 
 	* You must start a sub-activity with `startActivityForResult`, and the sub-activity 
 	  must extends super class `LockedChildActivity` (will be introduced int the following).
 	  And then, in your `onActivityResult` method, call `super.onActivityResult(...)` first.
 	  For example:
 
-			`@Override`
-			`public void onActivityResult(int requestCode, int resultCode, Intent intent){`
-			`	super.onActivityResult(requestCode, resultCode, intent);`
-			`	switch(requestCode){`
-			`	case REQUEST_CODE_CHILD:`
-			`		// TODO ...`
-			`		break;`
-			`	// TODO ...`
-			`	}`
-			`	// TODO ...`
-			`}`
+			@Override
+			public void onActivityResult(int requestCode, int resultCode, Intent intent){
+				super.onActivityResult(requestCode, resultCode, intent);
+				switch(requestCode){
+				case REQUEST_CODE_CHILD:
+					// TODO ...
+					break;
+				// TODO ...
+				}
+				// TODO ...
+			}
 
 3.	Create a *Child Activity*
 
