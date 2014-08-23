@@ -38,6 +38,7 @@ the following tips:
   method `protected boolean rightKey(String)` to define validation process of yourself.
   
 * You need to add an attribute in the manifest file to this *Locker Activity* as:
+
 	android:theme="@android:style/Theme.Translucent.NoTitleBar"
 
 2. Create a *Main Activity*
@@ -49,6 +50,7 @@ To achieve this, you NEED to extends `LockedActivity` which has the full name
 * Initialize fileds `key` and `lockerClass` of the super class with the key to unlock your 
   application and the lockerClass you created with super class `LockerActivity` respectively. 
   For example:
+
 	super.key = "";
 	super.lockerClass = MyLockerActivity.class;
 
@@ -56,6 +58,7 @@ To achieve this, you NEED to extends `LockedActivity` which has the full name
   must extends super class `LockedChildActivity` (will be introduced int the following).
   And then, in your `onActivityResult` method, call `super.onActivityResult(...)` first.
   For example:
+
     @Override
 	public void onActivityResult(int requestCode, int resultCode, Intent intent){
     	super.onActivityResult(requestCode, resultCode, intent);
