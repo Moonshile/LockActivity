@@ -25,6 +25,8 @@ into your project (NOT recommended), then *LockActivity* can be used as you wish
 
 1.	Create a *Locker Activity*
 
+2. test
+
 	*Locker activity* is derived from `com.moonshile.lib.ui.LockerActivity`, which will be
 	displayed after your application is locked. To use *Locker Activity*, you shall add an 
 	activity, modify its super class to `LockerActivity`, remove the generated layout file 
