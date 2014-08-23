@@ -25,8 +25,6 @@ into your project (NOT recommended), then *LockActivity* can be used as you wish
 
 1.	Create a *Locker Activity*
 
-2. test
-
 	*Locker activity* is derived from `com.moonshile.lib.ui.LockerActivity`, which will be
 	displayed after your application is locked. To use *Locker Activity*, you shall add an 
 	activity, modify its super class to `LockerActivity`, remove the generated layout file 
@@ -42,7 +40,6 @@ into your project (NOT recommended), then *LockActivity* can be used as you wish
 	*	You need to add an attribute in the manifest file to this *Locker Activity* as:
 
 			android:theme="@android:style/Theme.Translucent.NoTitleBar"
-
 2.	Create a *Main Activity*
 
 	*Main Activity* is the activity that the application will return to and then be locked. 
@@ -72,7 +69,6 @@ into your project (NOT recommended), then *LockActivity* can be used as you wish
 				}
 				// TODO ...
 			}
-
 3.	Create a *Child Activity*
 
 	*Child Activity* is derived from `com.moonshile.lib.ui.LockedChildActivity`. If the application
