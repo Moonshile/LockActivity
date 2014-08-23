@@ -32,14 +32,14 @@ into your project (NOT recommended), then *LockActivity* can be used as you wish
 	defined layout, just follow the steps as usual. However, it is necessary to emphasize 
 	the following tips:
 
-	* If you create a *Locker Activity* with self-defined layout, the layout must has an
-	  `EditText` view with id `moonshile_lock_key`, and must also has two buttons with 
-	  onClick event `onOK` and `onCancel` repectively. If necessary, you need to override
-	  method `protected boolean rightKey(String)` to define validation process of yourself.
+	*	If you create a *Locker Activity* with self-defined layout, the layout must has an
+		`EditText` view with id `moonshile_lock_key`, and must also has two buttons with 
+		onClick event `onOK` and `onCancel` repectively. If necessary, you need to override
+		method `protected boolean rightKey(String)` to define validation process of yourself.
 	  
-	* You need to add an attribute in the manifest file to this *Locker Activity* as:
+	*	You need to add an attribute in the manifest file to this *Locker Activity* as:
 
-		android:theme="@android:style/Theme.Translucent.NoTitleBar"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"
 
 2.	Create a *Main Activity*
 
@@ -47,17 +47,17 @@ into your project (NOT recommended), then *LockActivity* can be used as you wish
 	To achieve this, you NEED to extends `LockedActivity` which has the full name 
 	`com.moonshile.lib.ui.LockedActivity`. Then there's two thing you MUST do:
 
-	* Initialize fileds `key` and `lockerClass` of the super class with the key to unlock your 
-	  application and the lockerClass you created with super class `LockerActivity` respectively. 
-	  For example:
+	*	Initialize fileds `key` and `lockerClass` of the super class with the key to unlock your 
+		application and the lockerClass you created with super class `LockerActivity` respectively. 
+		For example:
 
 			super.key = "";
 			super.lockerClass = MyLockerActivity.class;
 
-	* You must start a sub-activity with `startActivityForResult`, and the sub-activity 
-	  must extends super class `LockedChildActivity` (will be introduced int the following).
-	  And then, in your `onActivityResult` method, call `super.onActivityResult(...)` first.
-	  For example:
+	*	You must start a sub-activity with `startActivityForResult`, and the sub-activity 
+		must extends super class `LockedChildActivity` (will be introduced int the following).
+		And then, in your `onActivityResult` method, call `super.onActivityResult(...)` first.
+		For example:
 
 			@Override
 			public void onActivityResult(int requestCode, int resultCode, Intent intent){
