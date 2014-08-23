@@ -59,17 +59,17 @@ To achieve this, you NEED to extends `LockedActivity` which has the full name
   And then, in your `onActivityResult` method, call `super.onActivityResult(...)` first.
   For example:
 
-    @Override
+	@Override
 	public void onActivityResult(int requestCode, int resultCode, Intent intent){
-    	super.onActivityResult(requestCode, resultCode, intent);
-    	switch(requestCode){
-    	case REQUEST_CODE_CHILD:
+		super.onActivityResult(requestCode, resultCode, intent);
+		switch(requestCode){
+		case REQUEST_CODE_CHILD:
 			// TODO ...
-    		break;
+			break;
 		// TODO ...
-    	}
+		}
 		// TODO ...
-    }
+	}
 
 3. Create a *Child Activity*
 
