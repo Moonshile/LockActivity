@@ -8,17 +8,15 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:gravity="bottom"
     android:background="@color/light_blue"
-    tools:context="com.moonshile.demo.MainActivity" >
+    tools:context="com.moonshile.demo.SubchildActivity" >
 
-    <TextView android:id="@+id/main_text"
+    <TextView android:id="@+id/subchild_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="@dimen/text_size"
         android:shadowRadius="10.0"
         android:shadowColor="@color/purple_shadow"
         android:textColor="@color/purple"
-        android:text="@string/main_text"
-        android:clickable="true"
-        android:onClick="onClick" />
+        android:text="@string/subchild_text" />
 
 </RelativeLayout>

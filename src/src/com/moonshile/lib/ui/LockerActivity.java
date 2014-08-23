@@ -15,6 +15,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -33,9 +34,13 @@ public abstract class LockerActivity extends Activity {
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState){
+		// TODO setTheme will not make screen translucent but black.
+		//      Now you can add android:theme="@android:style/Theme.Translucent.NoTitleBar"
+		//      to the subclass in manifest file to fix this bug
 		// theme must be set before super.onCreate()
 		this.setTheme(android.R.style.Theme_Translucent_NoTitleBar);
 		super.onCreate(savedInstanceState);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.moonshile_lock_default);
 		
 		Intent intent = getIntent();

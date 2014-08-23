@@ -21,14 +21,32 @@ import android.content.Intent;
  * extend from LockedActivity or LockedChildActivity.
  */
 public abstract class LockedChildActivity extends Activity {
+	protected boolean lockable = true;
 	
 	@Override
 	public void onPause(){
 		super.onPause();
 
-		Intent res = getIntent();
-		this.setResult(LockerActivity.RESULT_LOCK, res);
-		this.finish();
+		if(lockable){
+			Intent res = getIntent();
+			this.setResult(LockerActivity.RESULT_LOCK, res);
+			this.finish();
+		}
+		
+	}
+	
+	@Override
+	public void onActivityResult(int requestCode, int resultCode, Intent intent){
+		lockable = true;
+		if(resultCode == LockerActivity.RESULT_LOCK){
+			this.onPause();
+		}
+	}
+	
+	@Override
+	public void startActivityForResult(Intent intent, int requestCode){
+		lockable = false;
+		super.startActivityForResult(intent, requestCode);
 	}
 	
 }
