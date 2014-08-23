@@ -11,7 +11,8 @@ Effect of *LockActivity* is as follows. If onResume() of main page, or onPause()
 child page or subchild page is called, then the application will return to main page 
 and then be locked with default or self-defined LockerActivity.
 
-![Main Page](https://raw.githubusercontent.com/Moonshile/LockActivity/master/shortcuts/1.png)![Main Page](https://raw.githubusercontent.com/Moonshile/LockActivity/master/shortcuts/2.png)![Main Page](https://raw.githubusercontent.com/Moonshile/LockActivity/master/shortcuts/3.png)![Main Page](https://raw.githubusercontent.com/Moonshile/LockActivity/master/shortcuts/4.png)
+![Main Page](https://raw.githubusercontent.com/Moonshile/LockActivity/master/shortcuts/1.png) ![Main Page](https://raw.githubusercontent.com/Moonshile/LockActivity/master/shortcuts/2.png)
+![Main Page](https://raw.githubusercontent.com/Moonshile/LockActivity/master/shortcuts/3.png) ![Main Page](https://raw.githubusercontent.com/Moonshile/LockActivity/master/shortcuts/4.png)
 
 ###How To Use###
 
