@@ -59,6 +59,7 @@ To achieve this, you NEED to extends `LockedActivity` which has the full name
   And then, in your `onActivityResult` method, call `super.onActivityResult(...)` first.
   For example:
 
+<code>
 	@Override
 	public void onActivityResult(int requestCode, int resultCode, Intent intent){
 		super.onActivityResult(requestCode, resultCode, intent);
@@ -70,6 +71,7 @@ To achieve this, you NEED to extends `LockedActivity` which has the full name
 		}
 		// TODO ...
 	}
+</code>
 
 3. Create a *Child Activity*
 
