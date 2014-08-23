@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LockActivity.Demo</string>
+    <string name="child_text">Welcome to \nMoonshile\'s \nCHILD world!\nClick to enter subchild world.</string>
+    <string name="main_text">Welcome to \nMoonshile\'s \nMAIN world!\nClick to enter child world.</string>
+    <string name="subchild_text">Welcome to \nMoonshile\'s \nSUBCHILD world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_locker">LockerActivity</string>
+    <string name="title_activity_child">ChildActivity</string>
+    <string name="title_activity_subchild">SubchildActivity</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Copyright (C) 2014  Moonshile (moonshile@foxmail.com) -->
+
+<resources>
+    
+    <string name="moonshile_lock_key">解锁口令</string>
+    <string name="moonshile_unlock_ok">确认</string>
+    <string name="moonshile_unlock_cancel">取消</string>
+    <string name="moonshile_lock_wrong_key">错误的口令！剩余尝试次数：</string>
+
+</resources>
