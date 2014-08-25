@@ -27,7 +27,6 @@ src/AndroidManifest.xml
 src/proguard-project.txt
 src/project.properties
 src/.classpath
-src/.project
 src/libs
 src/assets
 src/.settings
