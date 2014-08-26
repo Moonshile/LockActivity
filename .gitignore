@@ -23,7 +23,6 @@ local.properties
 proguard/
 
 # ignore useless files for this lib
-src/AndroidManifest.xml
 src/proguard-project.txt
 src/project.properties
 src/.classpath
