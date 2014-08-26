@@ -24,7 +24,6 @@ proguard/
 
 # ignore useless files for this lib
 src/proguard-project.txt
-src/project.properties
 src/.classpath
 src/libs
 src/assets
